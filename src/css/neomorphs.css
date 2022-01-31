@@ -1,0 +1,96 @@
+:root
+{
+	--bg-color: rgb(235, 236, 240);
+	--region-shdw-up: -2px -3px 3px rgba(255,255,255,1), 2px 3px 3px rgba(0,0,0,0.3);
+	--region-shdw-dow: inset -3px -3px 3px rgba(255,255,255,1),inset 3px 3px 3px rgba(0,0,0,0.5);
+	--region-shdw-brd: -3px -3px 3px rgba(255,255,255,1), 
+						3px 3px 3px rgba(0,0,0,0.5),
+						inset -3px -3px 3px rgba(255,255,255,1),
+						inset 3px 3px 3px rgba(0,0,0,0.5);
+	--border: 1px solid rgb(255, 255, 255);
+}
+
+.neo-container{
+	padding: 0.5rem;
+}
+
+body
+{
+	background: var(--bg-color);
+	animation: load 0.5s;
+
+}
+.ex
+{
+	border-radius: 45px;
+	display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.ex-in
+{
+	width: 100%;
+	border-radius: 35px;
+	height: 100%;
+	
+}
+.title h1
+{
+	background: #b1b1b1;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    text-shadow: rgb(255 255 255 / 50%) 1px 2px 1px;
+    font-size: 70px;
+}
+.title
+{
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	margin-bottom: 1em;
+}
+.region-out
+{
+	box-shadow: var(--region-shdw-up)
+}
+.region-in
+{
+	box-shadow: var(--region-shdw-dow)
+}
+.region-out-in
+{
+	box-shadow: var(--region-shdw-brd);
+	border-bottom: var(--border);
+	border-right:  var(--border);
+}
+.button
+{
+	box-shadow: var(--region-shdw-up);
+	color: #8a92a5;
+}
+.button:active
+{
+	box-shadow: var(--region-shdw-dow);
+}
+.item form .button:hover
+{
+	color: #004cff;
+}
+.rotate:hover
+{
+	animation: rotate 0.8s ease-in alternate both;
+}
+.input
+{
+	border-radius: 45px;
+	padding: 1rem;
+	outline: none;
+	border: 1px solid #fff ;
+	color: black;
+   	background: #f1f1f1;
+    width: 100%;
+}
+.input::placeholder
+{
+	opacity: 0.5;
+	text-align: center;
+}

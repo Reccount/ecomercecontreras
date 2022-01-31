@@ -1,6 +1,8 @@
-import logo from './logo.svg';
 import './App.css';
-import NavBar from './NavBar.js';
+import NavBar from './components/NavBar.js';
+import './css/neomorphs.css';
+import './css/estructura.css';
+/*import './css/animaciones.css';*/
 
 function App() {
   return (

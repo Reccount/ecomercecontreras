@@ -1,0 +1,198 @@
+/* *
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* font-family: 'Bebas Neue', cursive; 
+	color: #8a92a5;
+} */
+.logo-and-name{
+	display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+#nombre{
+	font-size: xx-large;
+}
+/* #header
+{
+	margin-top: 1rem;
+	width: 100%;
+	height: 100px;
+	
+}
+#header #logo
+{
+	padding: 1rem;
+	height: 100%;
+	width: 20%;
+	font-size: 3rem;
+	font-weight: 600;
+	align-items: center;
+    display: flex;
+    justify-content: center;
+    border-radius: 45px;
+}
+#allContent
+{    display: flex;
+    -webkit-align-items: stretch;
+    align-items: stretch;
+    min-height: 62vh;
+}
+#navContent
+{
+	width: 20%;
+}
+.title
+{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+nav
+{
+	height: 100%;
+	width: 100%;
+	display: flex;
+    justify-content: center;
+	
+}
+nav ul
+{
+	padding: 2em 0 2em 0;
+    position: fixed;
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+nav ul li.navigation
+{
+	list-style: none;
+	width: 100%;
+	margin: 0.5em 0 0.5em 0;
+	padding: 0.5em;
+	border-radius: 45px;
+	
+}
+
+nav ul li#toggle
+{
+	list-style: none;
+	width: 100%;
+	margin: 0.5em 0 0.5em 0;
+	padding: 0.5em;
+	display: block;
+    text-align: center;
+}
+nav ul li#toggle span
+{
+	margin: 1em;
+    padding: 0.3em 0.9em 0.3em 0.9em;
+    border-radius: 45px;
+}
+button
+{
+	margin: 1em;
+    padding: 0.3em 0.9em 0.3em 0.9em;
+    border-radius: 45px;
+    border-width: 0;
+}
+nav ul li a
+{
+	text-decoration: none;
+	display: block;
+	width: 100%;
+	text-align: center;
+	color: #8a92a5;
+	
+}
+nav ul li a:hover
+{
+	color: #004cff;
+	
+}
+#content
+{
+	
+	min-height: 100%;
+	width: 100%;
+    padding: 1em;
+
+}
+.item
+{
+	padding: 1rem;
+	display: flex;
+}
+.item-text
+{
+	padding: 1rem;
+	justify-content: center;
+    flex-direction: column;
+}
+.item-ex
+{
+	padding: 1rem;
+	align-items: center;
+    justify-content: center;
+}
+.item-ex form
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+}
+.item-ex form a
+{
+	width: 100%;
+	padding: 0.5rem;
+	border-radius: 45px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5em;
+	text-decoration: none;
+}
+.cards-container
+{
+	display: flex;
+
+}
+.card
+{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border: none;
+    background:  var(--bg-color);
+    display: flex;
+    align-items: center;
+}
+.card .img
+{
+	width: 100%;
+	height: 100%;
+	/*background: url('../img/card1.jpg');
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.card .img-container
+{
+	width: 100%;
+	height: 200px;
+}
+
+.card-text{
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+    padding-top: 0.5em;
+}
+#footer
+{
+	width: 100%;
+	height: 100px;
+	margin-bottom: 1rem;
+} */

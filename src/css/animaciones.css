@@ -1,0 +1,60 @@
+/* animaciones */
+@keyframes load {
+	from{
+		opacity: 0;
+		transform: translateX(-10%);
+	}
+	to{
+		opacity: 1;
+		transform: translateX(0%);
+	}
+}
+
+@keyframes hoverbutton {
+	0%{
+		color: #8a92a5;
+	}
+	30%{
+		color: #0333a6;
+		/* text-shadow: 0 0 1px #0333a6; */
+	}
+	70%{
+		color: #0333a6;
+		/* text-shadow: 0 0 1px #0333a6; */
+	}
+	100%{
+		color: #8a92a5;
+	}
+}
+@keyframes card{
+	0%{
+		height: 200px;
+	}
+	50%{
+		height: 400px;
+	}
+	100%{
+		display: flex;
+		flex-direction: column;
+	    align-items: center;
+	}
+}
+
+@keyframes card-text{
+	
+	to {
+		display: flex;
+		flex-direction: column;
+	    align-items: center;
+	}
+}
+
+@keyframes rotate{
+	from{
+		transform: rotate(0deg);
+	}
+	to{
+		transform: rotate(180deg);
+	}
+}
+
