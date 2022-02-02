@@ -7,11 +7,9 @@ import './css/estructura.css';
 
 function App() {
   return (
-    <div className="App">
-      <header>
-      </header>
+    <div className="App container">
       <NavBar></NavBar>
-      <ListContainer nitem = {4}/>
+      <ListContainer title = "Bienvenidos a la musica"/>
     </div>
   );
 }

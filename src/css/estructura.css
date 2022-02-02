@@ -26,11 +26,11 @@
 .list-container{
 	display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
 }
 .list-container-children{
-	width: 10%;
+	width: 90%;
     display: flex;
     flex-direction: row;
     justify-content: center;
