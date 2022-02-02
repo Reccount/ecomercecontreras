@@ -11,8 +11,29 @@
     flex-direction: row;
     align-items: center;
 }
+
+.car-widget {
+    width: 4rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
 #nombre{
 	font-size: xx-large;
+}
+.list-container{
+	display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+.list-container-children{
+	width: 10%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 /* #header
 {

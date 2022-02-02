@@ -1,5 +1,6 @@
 import './App.css';
-import NavBar from './components/NavBar.js';
+import NavBar from './components/Menu/NavBar.jsx';
+import ListContainer from './components/ListContainer.jsx';
 import './css/neomorphs.css';
 import './css/estructura.css';
 /*import './css/animaciones.css';*/
@@ -10,6 +11,7 @@ function App() {
       <header>
       </header>
       <NavBar></NavBar>
+      <ListContainer nitem = {4}/>
     </div>
   );
 }
