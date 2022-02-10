@@ -1,13 +1,11 @@
-import Carta from '../components/Carta/Carta.jsx'
+// import ItemList from './ItemList'
 
-function ListContainer(props) {
-    const {title}= props;
+function ListContainer({children}) {
     return (
         <div className="neo-container list-container">
-            <h1>{title}</h1>
-            <div className="list-container">
-                <div className="list-container-children">
-                <Carta></Carta>
+            <div className="list-container col-12">
+                <div className="list-container-children col-12 row">
+                {children}
                 </div>
             </div>
         </div>

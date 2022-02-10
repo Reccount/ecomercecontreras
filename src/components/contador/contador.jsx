@@ -2,9 +2,9 @@ import React, { useEffect, useState } from 'react';
 import { faCartPlus } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-function Contador(props) {
-    const inicial = props.inicial;
-    const stock = props.Stock;
+function Contador({inicial,stock}) {
+    /*const inicial = props.inicial;
+    const stock = props.Stock;*/
     const [contador, setContador] = useState(inicial);
     
     

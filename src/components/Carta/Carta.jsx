@@ -1,15 +1,27 @@
 import React from 'react';
-import Contador from '../contador/contador.jsx'
 
-function Carta() {
+
+function Carta(props) {
+  
+  const estilos = {
+    backgroundImage : `url(${props.itemData.img})`,
+    backgroundSize: `cover`,
+    backgroundRepeat: "no-repeat",
+    backgroundPosition: "center"
+  }
+
+  
+  // <img className = "carta-img-r" src= {props.itemData.img} alt="guitar img" /> col-lg-4 col-md-4 col-sm-12 
   return (
-    <div className="carta ex region-out">
-          <div className="carta-img ex"></div>
-          <div className="carta-desc">
-            <h5>titulo del item</h5>
-            <span>descripcion lorem ipsum lorem ipslorem...... </span>
-          </div>
-          <div className="carta-c"><Contador Stock = {5} inicial={1} ></Contador></div>
+    <div className="carta-container col-md-3 col-sm-12">
+      <div className="carta ex region-out " id={props.itemData.id}>
+            <div className="carta-img ex" style={estilos}></div>
+            <div className="carta-desc">
+              <h5>{props.itemData.title}</h5>
+              <p>{props.itemData.des}</p>
+            </div>
+            <div className="carta-c"><span>precio: {props.itemData.Price}</span><span>Stock: {props.itemData.stock}</span></div>
+      </div>
     </div>);
 }
 
