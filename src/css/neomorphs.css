@@ -1,7 +1,7 @@
 :root
 {
-	--bg-color: rgb(235, 236, 240);
-	--region-shdw-up: -2px -3px 3px rgba(255,255,255,1), 2px 3px 3px rgba(0,0,0,0.3);
+	--bg-color: rgb(235, 236, 240); 
+	--region-shdw-up: -2px -3px 3px rgba(255,255,255,1), 2px 3px 3px rgba(0,0,0,0.3); 
 	--region-shdw-dow: inset -3px -3px 3px rgba(255,255,255,1),inset 3px 3px 3px rgba(0,0,0,0.5);
 	--region-shdw-brd: -3px -3px 3px rgba(255,255,255,1), 
 						3px 3px 3px rgba(0,0,0,0.5),
@@ -11,6 +11,10 @@
 	--bt-out-rigth:inset 2px 2px 7px rgb(255 255 255);
 	--bt-out-left:inset -2px 2px 7px rgb(255 255 255);
 	--bt-out-up:inset 0px 5px 7px rgb(255 255 255);
+
+	
+				
+
 }
 
 .neo-container{

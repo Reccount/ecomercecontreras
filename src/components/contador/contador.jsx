@@ -30,9 +30,9 @@ function Contador({inicial,stock}) {
             <button className="btn-right" onClick={onClicksus}>-</button>
             <span className="contador-num">{contador}</span>
             <button className="btn-left" onClick={onClickplus}>+</button>
-            <button className="btn-addCar" > <FontAwesomeIcon icon={faCartPlus} /> </button>
+            
         </div>
-        
+        <button className="btn-addCar" > <FontAwesomeIcon icon={faCartPlus} /> </button>
         </>
     );
 }
