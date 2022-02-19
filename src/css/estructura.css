@@ -6,6 +6,13 @@
 	/* font-family: 'Bebas Neue', cursive; 
 	color: #8a92a5;
 } */
+div a {
+	text-decoration: none;
+	color: black;
+}
+div a:hover {
+    color: black;
+}
 .logo-and-name{
 	display: flex;
     flex-direction: row;
@@ -117,6 +124,7 @@
 }
 .detail-container{
 	width: 100%;
+	padding: 1rem;
 }
 .detail-top{
 	height: 70vh;
@@ -168,6 +176,22 @@
 }
 .detail-botom{
 	margin-top: 1rem;
+}
+.loading-container{
+	width: 100%;
+	height: 30rem;
+	padding: 1rem;
+}
+.loading-item{
+	width: 100%;
+	height: 100%;
+	-webkit-animation: scale-up-center 0.4s ease-out infinite alternate-reverse ;
+	        animation: scale-up-center 0.4s ease-out infinite alternate-reverse ;
+}
+.loading-item.out{
+	padding: 1rem;
+	-webkit-animation: scale-up-center 0.4s ease-out infinite alternate-reverse ;
+	        animation: scale-up-center 0.4s ease-out infinite alternate-reverse ;
 }
 
 /* #header

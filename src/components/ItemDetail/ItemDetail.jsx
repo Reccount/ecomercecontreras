@@ -28,7 +28,7 @@ function ItemDetail(props) {
                 <div className="detail-text-sm">
                     <h1>{props.producData.title}</h1>
                     <h3>Precio {props.producData.Price}</h3>
-                    <spam>Categoria {props.producData.categoria}</spam>
+                    <p>Categoria {props.producData.categoria}</p>
                     <p>Stock {props.producData.stock}</p>
                     <Contador inicial={1} stock = {props.producData.stock}></Contador>
                 </div>
