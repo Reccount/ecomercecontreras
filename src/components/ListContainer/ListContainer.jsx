@@ -93,7 +93,6 @@ const tarea = new Promise ((resolve)=> {
 
 
 function filterItems(array, param){
-  console.log(param);
   if (Object.keys(param).length === 0){
     return array
   }
@@ -107,7 +106,6 @@ function filterItems(array, param){
 
 function ListContainer() {
   
-  console.log('from ItemList')
     const [item, setItem] = useState();
     const [source, setSource] = useState([]);
     const param = useParams()

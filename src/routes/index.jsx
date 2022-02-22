@@ -15,6 +15,7 @@ function Rutas() {
             <Route path="/" element={<Itemlistcontainer/>}/>
             <Route path="/category/:category" element={<Itemlistcontainer/>}/>
             <Route path="/item/:id" element={<ItemDetailContainer/>}/>
+            
         </Routes>
     </BrowserRouter>
   )

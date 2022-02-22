@@ -16,7 +16,7 @@ function ItemDetail(props) {
                 <div className="compra ex region-out"> 
                     <h1>{props.producData.title}</h1>
                     <h3>Precio {props.producData.Price}</h3>
-                    <spam>Categoria {props.producData.categoria}</spam>
+                    <span>Categoria {props.producData.categoria}</span>
                     <p>Stock {props.producData.stock}</p>
                     <Contador inicial={1} stock = {props.producData.stock}></Contador>
                 </div> 
