@@ -1,6 +1,7 @@
 import Carta from '../Carta/Carta.jsx'
 
 function ItemList({itemData}) {
+  
   return <>
         <div className="neo-container list-container">
             <div className="list-container col-12">

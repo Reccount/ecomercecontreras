@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useContext } from 'react';
 import ItemDetail from './../ItemDetail/ItemDetail.jsx'
 import {useParams} from "react-router-dom"
+
 
 const data = [
     { 
@@ -87,7 +88,7 @@ const data = [
   ];
 
 const tarea = new Promise ((resolve)=> {
-    setTimeout(()=>resolve(data),5000)
+    setTimeout(()=>resolve(data),1500)
 })
 
 

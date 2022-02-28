@@ -88,41 +88,31 @@ const data = [
 ];
 
 const tarea = new Promise ((resolve)=> {
-  setTimeout(()=>resolve(data),1500)
+  setTimeout(()=>
+  resolve(data)
+    ,1500)
 })
-
-
-function filterItems(array, param){
-  if (Object.keys(param).length === 0){
-    return array
-  }
-  if(array && array.length > 0){
-    return array.filter(filtered => filtered.categoria == param.category)
-  }else{
-    return [];
-  }
-  
-}
 
 function ListContainer() {
   
     const [item, setItem] = useState();
-    const [source, setSource] = useState([]);
     const param = useParams()
     
 
     useEffect(() => {
         tarea.then(result=>
         {
-          setSource(result);
-          setItem(result);
+          if(param.category){
+            let filtrado = result.filter(filtered => filtered.categoria === param.category)
+            setItem(filtrado);
+          }else{
+            setItem(result);
+          }
+          
         })
-    }, []);
-    
-    useEffect(() => {
-      const itemFiltered = filterItems(source,param);
-      setItem(itemFiltered);
     }, [param.category]);
+    
+    
     
     
   return (

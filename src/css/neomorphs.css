@@ -86,7 +86,7 @@ body
 .btn-addCar{
 	box-shadow: var(--bt-out-up);
 }
-.btn-addCar:active
+.btn-addCar:active, .btn-remove:active
 {
 	box-shadow: var(--region-shdw-dow);
 }

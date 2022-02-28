@@ -2,7 +2,6 @@ import React from 'react'
 import Contador from './../contador/contador'
 
 function ItemDetail(props) {
-    
     const foto = {
         backgroundImage : `url(${props.producData.img})`,
        }
@@ -18,22 +17,11 @@ function ItemDetail(props) {
                     <h3>Precio {props.producData.Price}</h3>
                     <span>Categoria {props.producData.categoria}</span>
                     <p>Stock {props.producData.stock}</p>
-                    <Contador inicial={1} stock = {props.producData.stock}></Contador>
+                    <Contador inicial={1} stock = {props.producData.stock} item={props.producData} ></Contador>
                 </div> 
             </div>
         </div>
-        <div className="detail-compra  col-sm-12 col-lg-5 d-sm-block d-lg-none">
-            <div className="compra-sm ex region-out"> 
-                <div className="foto-Extendida-sm ex region-out" style={foto}></div>
-                <div className="detail-text-sm">
-                    <h1>{props.producData.title}</h1>
-                    <h3>Precio {props.producData.Price}</h3>
-                    <p>Categoria {props.producData.categoria}</p>
-                    <p>Stock {props.producData.stock}</p>
-                    <Contador inicial={1} stock = {props.producData.stock}></Contador>
-                </div>
-            </div> 
-        </div>
+        
         
         <div className="detail-botom">
             <div className="detail-desc col-12">
