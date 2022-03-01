@@ -1,4 +1,4 @@
-import React ,{ useEffect, useState,useContext } from 'react'
+import React ,{ useContext } from 'react'
 import { faTrash } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {CarContext} from "../../CarContext/CarProvider"
@@ -7,7 +7,6 @@ import {CarContext} from "../../CarContext/CarProvider"
 function CarItem(props) {
     const{fremoveCar}= useContext(CarContext);
     
-
     const estilos = {
       backgroundImage : `url(${props.itemData.img})`,
       backgroundSize: `contain`,
@@ -19,7 +18,7 @@ function CarItem(props) {
     }
     
     return (
-    props.itemData == 'no-item'? 
+    props.itemData === 'no-item'? 
     <div className="car-item ">
         <div className="car-no-item-order ex region-out">
         <div className="car-no-item-title">
@@ -37,13 +36,12 @@ function CarItem(props) {
             <div className="car-item-specification">
                 <div className="car-item-text">
                     <div className="car-item-title"><h3>{props.itemData.title}</h3></div>
-                    <div className="car-item-desc"><p>{props.itemData.des}</p></div>
                 </div>
                 <div className="car-item-number">
                     <div className="car-item-price">
-                        <h2>${props.itemData.Price}</h2>
+                        <h2>${props.itemData.price}</h2>
                         <h4>x</h4>
-                        <h4>{props.q.nitem}</h4>
+                        <h4>{props.itemData.quantity}</h4>
                     </div>
                 </div>
                 <div className="car-item-icon">

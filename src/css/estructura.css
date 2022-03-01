@@ -100,14 +100,14 @@ div a:hover {
 	background-color: rgb(255, 255, 255)
 }
 .carta-desc{
-	height: 30%;
+	height: 15%;
 	width: 100%;
 	text-align: initial;
 	padding: 1rem 1rem 0 1rem;
 }
 .carta-c
 {
-	height: 15%;
+	height: 10%;
     width: 100%;
 	padding: 0 1rem 1rem 1rem;
 	display: flex;
@@ -223,6 +223,7 @@ div a:hover {
     display: flex;
     flex-direction: row;
     align-items: center;
+	width: 100%;
 }
 .car-item-text{
 	padding: 0 0.5rem 0 0.5rem;

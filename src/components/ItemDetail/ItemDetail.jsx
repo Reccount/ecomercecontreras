@@ -1,7 +1,10 @@
-import React from 'react'
+import React ,{ useContext }from 'react'
 import Contador from './../contador/contador'
+import {CarContext} from "../../CarContext/CarProvider"
+import { Link } from 'react-router-dom'
 
 function ItemDetail(props) {
+    const{fitemExist}= useContext(CarContext);
     const foto = {
         backgroundImage : `url(${props.producData.img})`,
        }
@@ -14,10 +17,17 @@ function ItemDetail(props) {
             <div className="detail-compra  d-none d-lg-block col-sm-12 col-lg-5">
                 <div className="compra ex region-out"> 
                     <h1>{props.producData.title}</h1>
-                    <h3>Precio {props.producData.Price}</h3>
+                    <h3>Precio {props.producData.price}</h3>
                     <span>Categoria {props.producData.categoria}</span>
                     <p>Stock {props.producData.stock}</p>
-                    <Contador inicial={1} stock = {props.producData.stock} item={props.producData} ></Contador>
+                    {!fitemExist(props.producData) ?
+                    <Contador 
+                        inicial={1} 
+                        stock = {props.producData.stock} 
+                        item={props.producData}
+                    />
+                    :   <><Link id='goCar' to={`/cart`} className=" btn-addCar" > ir al Carrito </Link>
+                        <div className="cont-shop"><Link to={`../`} ><span>Continue Shopping</span></Link></div></>}
                 </div> 
             </div>
         </div>
@@ -26,12 +36,13 @@ function ItemDetail(props) {
         <div className="detail-botom">
             <div className="detail-desc col-12">
                 <div className=" ex region-out detail-text">
-                {props.producData.des}
+                {props.producData.description}
                 </div>
             </div>
         </div>
     </div>
   )
 }
+ 
 
 export default ItemDetail

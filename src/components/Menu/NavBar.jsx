@@ -23,10 +23,10 @@ function Navbar() {
                 <Link to={"/"} className="nav-link active" aria-current="page">Home</Link>
               </li>
               <li className="nav-item">
-                <Link to={"/category/Electrica"} className="nav-link" href="/#">Guitarra Electrica</Link>
+                <Link to={"/category/Electrica"} className="nav-link">Guitarra Electrica</Link>
               </li>
               <li className="nav-item">
-                <Link to={"/category/Acustica"} className="nav-link" href="/#">Guitarra Acustica</Link>
+                <Link to={"/category/Acustica"} className="nav-link">Guitarra Acustica</Link>
               </li>
             </ul>
           </div>
