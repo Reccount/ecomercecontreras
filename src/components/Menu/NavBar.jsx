@@ -10,7 +10,7 @@ function Navbar() {
     <div className="neo-container">
       <nav className="navbar navbar-expand-lg navbar-light bg-light ex region-out">
         <div className="container-fluid">
-          <Link to={"/"} className="navbar-brand logo-and-name" href="/#">
+          <Link to={"/"} className="navbar-brand logo-and-name" >
             <img src={logo} className="logo"  alt="logo"/>
               <span id="nombre" className="d-none d-md-block"> Guitar Finder </span>
           </Link>

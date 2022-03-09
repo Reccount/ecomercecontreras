@@ -19,7 +19,7 @@ function CarItem(props) {
     
     return (
     props.itemData === 'no-item'? 
-    <div className="car-item ">
+    <div className="car-item">
         <div className="car-no-item-order ex region-out">
         <div className="car-no-item-title">
             <h1>Carrito Vacio</h1>

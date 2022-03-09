@@ -1,6 +1,7 @@
 import React,{ useEffect, useState,useContext }   from 'react'
 import {CarContext} from "../../CarContext/CarProvider"
 import CarItem from "../CarItem/CarItem"
+import CheckOut from "../CheckOut/CheckOut"
 
 
 function CarContainer() {
@@ -20,7 +21,9 @@ function CarContainer() {
 
     
   return (
-    <div className="CarItemContainer">
+    <>
+    <div className="car-form-container">
+    <div className={car.length > 0 ? "CarItemContainer":"CarItemContainerEmpty" }>
         {car.length > 0 && <div className="clear-all-container"><button className="ex region-out btn-remove" onClick={()=>fclearAll()}>Borrar todo </button></div>}    
         {carItem}
         {car.length > 0 && <div className="car-item ex region-out">
@@ -29,6 +32,9 @@ function CarContainer() {
                                 </div>
                             </div>}
     </div>
+    {car.length > 0 &&<CheckOut carrito={car} total={fgetTotalPrice()}/>}
+    </div>
+    </>
   )
 }
 export default CarContainer;

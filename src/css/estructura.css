@@ -200,7 +200,15 @@ div a:hover {
 	-webkit-animation: scale-up-center 0.4s ease-out infinite alternate-reverse ;
 	        animation: scale-up-center 0.4s ease-out infinite alternate-reverse ;
 }
+.car-form-container{
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
 .CarItemContainer{
+	width: 75%;
+}
+.CarItemContainerEmpty{
 	width: 100%;
 }
 .car-item{
@@ -271,6 +279,9 @@ div a:hover {
 }
 .cont-shop a:hover{
 	color: #F7A215;
+}
+.form-container{
+	padding:1rem;
 }
 
 /* #header
