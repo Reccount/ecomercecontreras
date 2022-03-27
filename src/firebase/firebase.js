@@ -1,6 +1,6 @@
 // Import the functions you need from the SDKs you need
 import { initializeApp } from "firebase/app";
-import { getDocs, getFirestore , collection ,getDoc ,doc,addDoc,updateDoc} from "firebase/firestore";
+import { getDocs, getFirestore , collection ,getDoc ,doc,addDoc,updateDoc,where,query} from "firebase/firestore";
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -21,7 +21,8 @@ export const db = getFirestore(app);
 export async function getAllGitars(){
   try{
     const data = collection(db,"items");
-    const guitarCollection = await getDocs(data);
+    const qdata = query(data, where("stock", ">", 0))
+    const guitarCollection = await getDocs(qdata);
     const restult = guitarCollection.docs.map( guitar => {
       return {...guitar.data(),id:guitar.id}
     });
@@ -50,8 +51,8 @@ export async function createOrder({data}){
     
     const col = collection(db,"orders");
     const order = await addDoc(col,data)
-    alert(order.id)
     data.items.forEach(element => updateStock(element.id,element.quantity));
+    return(order.id)
   }
   catch (err) {
     console.log(err);
@@ -66,6 +67,20 @@ export async function updateStock(guitarId,numLess){
       let stockUpdated = response.data().stock - numLess
       await updateDoc(stockRef,{stock:stockUpdated})
     console.log('actualizado el stock')
+  }
+  catch (err) {
+    console.log(err);
+  }
+}
+
+export async function getOrder(OrderId){
+  console.log(OrderId);
+  try{
+    const data = collection(db,"orders");
+    const orderDtail = doc(data,OrderId);
+
+    let resultDoc = await getDoc(orderDtail)
+    return {...resultDoc.data(), id:resultDoc.id}
   }
   catch (err) {
     console.log(err);

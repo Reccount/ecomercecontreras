@@ -283,7 +283,46 @@ div a:hover {
 .form-container{
 	padding:1rem;
 }
-
+.itemDetail{
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 11rem;
+    padding: 1rem;
+	box-shadow: 6px 6px 7px rgb(0 0 0 / 12%);
+	margin-bottom: 1rem;
+}
+.itemDetailhdr{
+	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 11rem;
+    padding: 1rem;
+}
+.itemDetailimg{
+	height: 100%;
+    width: 14%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 33%;
+	
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+#orderid{
+	font-weight: bold;
+	color: #F7A215;
+}
+.personalData{
+	font-weight: bold;
+}
+.error{
+	background: rgba(255, 0, 0, 0.36);
+}
 /* #header
 {
 	margin-top: 1rem;

@@ -27,7 +27,7 @@ function ItemDetail(props) {
                         item={props.producData}
                     />
                     :   <><Link id='goCar' to={`/cart`} className=" btn-addCar" > ir al Carrito </Link>
-                        <div className="cont-shop"><Link to={`../`} ><span>Continue Shopping</span></Link></div></>}
+                        <div className="cont-shop"><Link to={`../`} ><span>Seguir Comprando</span></Link></div></>}
                 </div> 
             </div>
         </div>
